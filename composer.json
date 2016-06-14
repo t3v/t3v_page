@@ -1,0 +1,28 @@
+{
+  "name": "t3v/t3v_page",
+  "type": "typo3-cms-extension",
+  "description": "The TYPO3voila Page extension.",
+  "authors": [
+    {
+      "name": "Maik Kempe",
+      "email": "mkempe@bitaculous.com",
+      "homepage": "https://bitaculous.com"
+    }
+  ],
+  "keywords": [
+    "TYPO3voila",
+    "Page",
+    "TYPO3",
+    "CMS"
+  ],
+  "homepage": "https://bitbucket.org/t3v/t3v_page",
+  "version": "1.0.0",
+  "require": {
+    "typo3/cms-core": ">= 7.6.0, < 8.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "T3v\\T3vPage\\": "Classes"
+    }
+  }
+}
