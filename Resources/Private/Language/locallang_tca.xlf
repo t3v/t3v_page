@@ -8,6 +8,10 @@
         <source>Additional data</source>
       </trans-unit>
 
+      <trans-unit id="pages.tx_t3vpage_claim.label" xml:space="preserve">
+        <source>Claim</source>
+      </trans-unit>
+
       <trans-unit id="pages.tx_t3vpage_summary.label" xml:space="preserve">
         <source>Summary</source>
       </trans-unit>

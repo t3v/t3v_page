@@ -9,6 +9,11 @@
         <target>Zusätzliche Daten</target>
       </trans-unit>
 
+      <trans-unit id="pages.tx_t3vpage_claim.label" xml:space="preserve">
+        <source>Claim</source>
+        <target>Claim</target>
+      </trans-unit>
+
       <trans-unit id="pages.tx_t3vpage_summary.label" xml:space="preserve">
         <source>Summary</source>
         <target>Zusammenfassung</target>

@@ -8,8 +8,9 @@ Extends the Page object of TYPO3 with custom fields.
 Custom fields
 -------------
 
-* Thumbnail (`tx_t3vpage_thumbnail`)
+* Claim (`tx_t3vpage_claim`)
 * Summary (`tx_t3vpage_summary`)
+* Thumbnail (`tx_t3vpage_thumbnail`)
 
 Installation
 ------------
@@ -23,7 +24,7 @@ Installation
       ],
 
       "require": {
-        "t3v/t3v_page": "~1.0.0"
+        "t3v/t3v_page": "~1.1.0"
       }
     }
     ```

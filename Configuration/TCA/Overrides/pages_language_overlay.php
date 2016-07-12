@@ -4,6 +4,16 @@ if (!defined('TYPO3_MODE')) {
 }
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages_language_overlay', array(
+  'tx_t3vpage_claim' => array(
+    'label' => 'LLL:EXT:t3v_page/Resources/Private/Language/locallang_tca.xlf:pages.tx_t3vpage_claim.label',
+    'config' => array(
+      'type' => 'input',
+      'size' => 255,
+      'eval' => 'trim'
+    ),
+    'exclude' => true
+  ),
+
   'tx_t3vpage_summary' => array(
     'label' => 'LLL:EXT:t3v_page/Resources/Private/Language/locallang_tca.xlf:pages.tx_t3vpage_summary.label',
     'config' => array(
@@ -33,4 +43,4 @@ if (!defined('TYPO3_MODE')) {
   )
 ));
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages_language_overlay', 'tx_t3vpage_summary,tx_t3vpage_thumbnail', '', 'after:nav_title');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages_language_overlay', 'tx_t3vpage_claim,tx_t3vpage_summary,tx_t3vpage_thumbnail', '', 'after:nav_title');
