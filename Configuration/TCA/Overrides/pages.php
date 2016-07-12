@@ -8,7 +8,8 @@ if (!defined('TYPO3_MODE')) {
     'label' => 'LLL:EXT:t3v_page/Resources/Private/Language/locallang_tca.xlf:pages.tx_t3vpage_claim.label',
     'config' => array(
       'type' => 'input',
-      'size' => 255,
+      'size' => '40',
+      'max' => 255,
       'eval' => 'trim'
     ),
     'l10n_mode' => 'mergeIfNotBlank',
@@ -54,5 +55,5 @@ $GLOBALS['TCA']['pages']['ctrl']['requestUpdate'] .= ',tx_t3vpage_exclude';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', '--palette--;LLL:EXT:t3v_page/Resources/Private/Language/locallang_tca.xlf:pages.palette.title;tx_t3vpage', '1', 'after:description');
 
 $GLOBALS['TCA']['pages']['palettes']['tx_t3vpage'] = array(
-  'showitem' => 'tx_t3vpage_claim,tx_t3vpage_summary,--linebreak--,tx_t3vpage_thumbnail'
+  'showitem' => 'tx_t3vpage_claim,--linebreak--,tx_t3vpage_summary,--linebreak--,tx_t3vpage_thumbnail'
 );

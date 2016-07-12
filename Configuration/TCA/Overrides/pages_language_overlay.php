@@ -8,7 +8,8 @@ if (!defined('TYPO3_MODE')) {
     'label' => 'LLL:EXT:t3v_page/Resources/Private/Language/locallang_tca.xlf:pages.tx_t3vpage_claim.label',
     'config' => array(
       'type' => 'input',
-      'size' => 255,
+      'size' => '40',
+      'max' => 255,
       'eval' => 'trim'
     ),
     'exclude' => true
