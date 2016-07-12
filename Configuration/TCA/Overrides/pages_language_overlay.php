@@ -12,6 +12,7 @@ if (!defined('TYPO3_MODE')) {
       'max' => 255,
       'eval' => 'trim'
     ),
+    'l10n_mode' => 'mergeIfNotBlank',
     'exclude' => true
   ),
 
@@ -23,6 +24,7 @@ if (!defined('TYPO3_MODE')) {
       'rows' => 3,
       'eval' => 'trim'
     ),
+    'l10n_mode' => 'mergeIfNotBlank',
     'exclude' => true
   ),
 
@@ -40,6 +42,7 @@ if (!defined('TYPO3_MODE')) {
       ),
       $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
     ),
+    'l10n_mode' => 'mergeIfNotBlank',
     'exclude' => true
   )
 ));
