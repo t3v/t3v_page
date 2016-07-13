@@ -4,6 +4,8 @@
     <header />
 
     <body>
+      <!-- Pages -->
+
       <trans-unit id="pages.palette.title" xml:space="preserve">
         <source>Additional data</source>
       </trans-unit>
@@ -17,6 +19,24 @@
       </trans-unit>
 
       <trans-unit id="pages.tx_t3vpage_thumbnail.label" xml:space="preserve">
+        <source>Thumbnail</source>
+      </trans-unit>
+
+      <!-- Pages Language Overlay -->
+
+      <trans-unit id="pages_language_overlay.palette.title" xml:space="preserve">
+        <source>Additional data</source>
+      </trans-unit>
+
+      <trans-unit id="pages_language_overlay.tx_t3vpage_claim.label" xml:space="preserve">
+        <source>Claim</source>
+      </trans-unit>
+
+      <trans-unit id="pages_language_overlay.tx_t3vpage_summary.label" xml:space="preserve">
+        <source>Summary</source>
+      </trans-unit>
+
+      <trans-unit id="pages_language_overlay.tx_t3vpage_thumbnail.label" xml:space="preserve">
         <source>Thumbnail</source>
       </trans-unit>
     </body>

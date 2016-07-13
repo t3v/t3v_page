@@ -5,7 +5,7 @@ if (!defined('TYPO3_MODE')) {
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages_language_overlay', array(
   'tx_t3vpage_claim' => array(
-    'label' => 'LLL:EXT:t3v_page/Resources/Private/Language/locallang_tca.xlf:pages.tx_t3vpage_claim.label',
+    'label' => 'LLL:EXT:t3v_page/Resources/Private/Language/locallang_tca.xlf:pages_language_overlay.tx_t3vpage_claim.label',
     'config' => array(
       'type' => 'input',
       'size' => '40',
@@ -17,7 +17,7 @@ if (!defined('TYPO3_MODE')) {
   ),
 
   'tx_t3vpage_summary' => array(
-    'label' => 'LLL:EXT:t3v_page/Resources/Private/Language/locallang_tca.xlf:pages.tx_t3vpage_summary.label',
+    'label' => 'LLL:EXT:t3v_page/Resources/Private/Language/locallang_tca.xlf:pages_language_overlay.tx_t3vpage_summary.label',
     'config' => array(
       'type' => 'text',
       'cols' => 40,
@@ -29,7 +29,7 @@ if (!defined('TYPO3_MODE')) {
   ),
 
   'tx_t3vpage_thumbnail' => array(
-    'label' => 'LLL:EXT:t3v_page/Resources/Private/Language/locallang_tca.xlf:pages.tx_t3vpage_thumbnail.label',
+    'label' => 'LLL:EXT:t3v_page/Resources/Private/Language/locallang_tca.xlf:pages_language_overlay.tx_t3vpage_thumbnail.label',
     'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
       'image',
       array(
@@ -47,4 +47,10 @@ if (!defined('TYPO3_MODE')) {
   )
 ));
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages_language_overlay', 'tx_t3vpage_claim,tx_t3vpage_summary,tx_t3vpage_thumbnail', '', 'after:nav_title');
+$GLOBALS['TCA']['pages_language_overlay']['ctrl']['requestUpdate'] .= ',tx_t3vpage_exclude';
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages_language_overlay', '--palette--;LLL:EXT:t3v_page/Resources/Private/Language/locallang_tca.xlf:pages_language_overlay.palette.title;tx_t3vpage', '1', 'after:description');
+
+$GLOBALS['TCA']['pages_language_overlay']['palettes']['tx_t3vpage'] = array(
+  'showitem' => 'tx_t3vpage_claim,--linebreak--,tx_t3vpage_summary,--linebreak--,tx_t3vpage_thumbnail'
+);
