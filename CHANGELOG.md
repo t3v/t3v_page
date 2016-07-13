@@ -3,6 +3,11 @@ Changelog
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
+1.2.0
+-----
+
+* Moved pages language overlay fields to `Metadata` tab
+
 1.1.1
 -----
 

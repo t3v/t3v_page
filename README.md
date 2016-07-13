@@ -24,7 +24,7 @@ Installation
       ],
 
       "require": {
-        "t3v/t3v_page": "~1.1.1"
+        "t3v/t3v_page": "~1.2.1"
       }
     }
     ```
