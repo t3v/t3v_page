@@ -4,7 +4,7 @@
     <header />
 
     <body>
-      <!-- Pages -->
+      <!-- === Pages === -->
 
       <trans-unit id="pages.palette.title" xml:space="preserve">
         <source>Additional data</source>
@@ -26,7 +26,7 @@
         <target>Vorschaubild</target>
       </trans-unit>
 
-      <!-- Pages Language Overlay -->
+      <!-- === Pages Language Overlay === -->
 
       <trans-unit id="pages_language_overlay.palette.title" xml:space="preserve">
         <source>Additional data</source>
