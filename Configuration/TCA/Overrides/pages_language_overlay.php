@@ -1,7 +1,5 @@
 <?php
-if (!defined('TYPO3_MODE')) {
-  die ('Access denied.');
-}
+defined('TYPO3_MODE') or die('Access denied.');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages_language_overlay', array(
   'tx_t3vpage_claim' => array(
