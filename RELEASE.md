@@ -7,7 +7,7 @@ Release
 STEPS:
 ------
 
-1. Update CHANGELOG
-2. Bump version in `composer.json`, `ext_emconf.php`, `Changelog.md` and `README.md`
+1. Update Changelog (`CHANGELOG.md`)
+2. Bump version in `composer.json`, `ext_emconf.php` and `README.md`
 3. Push changes
 4. Create a tag
