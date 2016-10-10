@@ -1,5 +1,5 @@
-[TYPO3voila Page]
-=================
+[T3v Page]
+==========
 
 **The [TYPO3voila] Page extension.**
 
@@ -24,12 +24,12 @@ Installation
       ],
 
       "require": {
-        "t3v/t3v_page": "~1.2.1"
+        "t3v/t3v_page": "~1.2.2"
       }
     }
     ```
 
-2. Run `composer update` to install all dependencies with Composer
+2. Run `composer install` or `composer update` to install all dependencies with Composer
 
 3. Include the TypoScript for `t3v_page` in the main TypoScript template
 
@@ -49,5 +49,5 @@ immediately yanked and / or a new version should be immediately released that re
 [Composer]: https://getcomposer.org "Dependency Manager for PHP"
 [here]: https://bitbucket.org/t3v/t3v_page/issues "Bitbucket Issue Tracker"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
-[TYPO3voila Page]: https://bitbucket.org/t3v/t3v_page "The TYPO3voila Page extension."
-[TYPO3voila]: # "UH LÁLÁ, TYPO3!"
+[T3v Page]: https://bitbucket.org/t3v/t3v_page "The TYPO3voila Page extension."
+[TYPO3voila]: https://bitbucket.org/t3v "“UH LÁLÁ, TYPO3!”"

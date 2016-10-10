@@ -9,9 +9,16 @@
       "homepage": "https://bitaculous.com"
     }
   ],
-  "keywords": ["T3v", "TYPO3voila", "Page", "TYPO3", "CMS"],
+  "keywords": [
+    "CMS",
+    "Page",
+    "T3v",
+    "TYPO3",
+    "TYPO3voila",
+    "UH LÁLÁ"
+  ],
   "homepage": "https://bitbucket.org/t3v/t3v_page",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "require": {
     "php": ">= 5.6",
     "typo3/cms-core": ">= 7.6.0, < 8.1.0",

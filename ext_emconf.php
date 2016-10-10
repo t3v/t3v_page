@@ -1,13 +1,13 @@
 <?php
 $EM_CONF[$_EXTKEY] = array(
-  'title' => 'TYPO3voila Page',
+  'title' => 'T3v Page',
   'description' => 'The TYPO3voila Page extension.',
   'author' => 'Maik Kempe',
   'author_email' => 'mkempe@bitaculous.com',
   'author_company' => 'Bitaculous - It\'s all about the bits, baby!',
   'category' => 'fe',
   'state' => 'stable',
-  'version' => '1.2.1',
+  'version' => '1.2.2',
   'shy' => false,
   'createDirs' => '',
   'uploadfolder' => false,
