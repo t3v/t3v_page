@@ -1,11 +1,7 @@
-# === Plugin configuration ===
+# === T3v Page Constants ===
 
 plugin {
   tx_t3vpage {
-    settings {
-      # ...
-    }
-
     persistence {
       # cat=plugin/tx_t3vpage/persistence; type=int+; label=The PID of the storage
       # storagePid = 0
@@ -20,6 +16,10 @@ plugin {
 
       # cat=plugin/tx_t3vpage/view; type=string; label=Path to template partials
       partialRootPath = EXT:t3v_page/Resources/Private/Partials/
+    }
+
+    settings {
+      # ...
     }
   }
 }

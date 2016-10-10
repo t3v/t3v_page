@@ -1,11 +1,7 @@
-# === Plugin configuration ===
+# === T3v Page Configuration ===
 
 plugin {
   tx_t3vpage {
-    settings {
-      # ...
-    }
-
     persistence {
       enableAutomaticCacheClearing = 1
 
@@ -20,6 +16,10 @@ plugin {
       templateRootPath = {$plugin.tx_t3vpage.view.templateRootPath}
 
       partialRootPath = {$plugin.tx_t3vpage.view.partialRootPath}
+    }
+
+    settings {
+      # ...
     }
   }
 }
