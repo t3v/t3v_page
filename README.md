@@ -16,7 +16,21 @@ Installation
 ------------
 
 1. Add `t3v_page` to the [Composer] configuration (`composer.json`):
+
+  ```json
+  {
+    "repositories": [
+      { "type": "vcs", "url": "https://github.com/t3v/t3v_page" }
+    ],
+
+    "require": {
+      "t3v/t3v_page": "~1.3.0"
+    }
+  }
+  ```
+
 2. Run `composer install` or `composer update` to install all dependencies with Composer
+
 3. Include the TypoScript for `t3v_page` in the main TypoScript template
 
 Bug Reports
