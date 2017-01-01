@@ -17,7 +17,7 @@ Installation
 
 1. Add `t3v_page` to the [Composer] configuration (`composer.json`):
 
-    ```
+    ```javascript
     {
       "repositories": [
         { "type": "vcs", "url": "https://github.com/t3v/t3v_page" }
