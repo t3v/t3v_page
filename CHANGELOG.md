@@ -3,6 +3,12 @@ Changelog
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
+Unreleased
+----------
+
+* Updated Composer configuration
+* Updated `ext_emconf.php`
+
 1.3.0
 -----
 
