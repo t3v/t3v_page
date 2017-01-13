@@ -8,6 +8,6 @@ STEPS:
 ------
 
 1. Update Changelog (`CHANGELOG.md`)
-2. Bump version in `composer.json`, `ext_emconf.php` and `README.md`
+2. Bump version in `ext_emconf.php`
 3. Push changes
 4. Create a tag
