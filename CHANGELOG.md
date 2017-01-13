@@ -6,6 +6,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 1.3.1
 -----
 
+* Wrap TCA overrides in user function
 * Updated Composer configuration
 * Updated `ext_emconf.php`
 
