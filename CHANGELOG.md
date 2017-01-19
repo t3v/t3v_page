@@ -3,6 +3,12 @@ Changelog
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
+Unreleased
+----------
+
+* Hide diff (`tx_t3vpage_thumbnail`)
+* Cleaned up
+
 1.3.1
 -----
 
@@ -21,13 +27,13 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 -----
 
 * Updated dependencies
-* Clean up
+* Cleaned up
 * Minor changes
 
 1.2.1
 -----
 
-* Clean up code and structure
+* Cleaned up code and structure
 
 1.2.0
 -----

@@ -44,7 +44,7 @@ call_user_func(function() {
         $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
       ),
       'l10n_mode' => 'mergeIfNotBlank',
-      'l10n_display' => 'defaultAsReadonly',
+      'l10n_display' => 'hideDiff',
       'exclude' => true
     ]
   ]);
