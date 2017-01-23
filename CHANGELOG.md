@@ -8,6 +8,7 @@ Unreleased
 
 * Hide diff (`tx_t3vpage_thumbnail`)
 * Cleaned up
+* Updated Composer dependencies
 
 1.3.1
 -----
