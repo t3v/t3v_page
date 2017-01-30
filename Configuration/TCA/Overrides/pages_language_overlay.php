@@ -10,7 +10,7 @@ call_user_func(function($extkey) {
       'label' => $lll . 'pages_language_overlay.tx_t3vpage_claim.label',
       'config' => [
         'type' => 'input',
-        'size' => '40',
+        'size' => 42,
         'max' => 255,
         'eval' => 'trim'
       ],
@@ -22,8 +22,6 @@ call_user_func(function($extkey) {
       'label' => $lll . 'pages_language_overlay.tx_t3vpage_summary.label',
       'config' => [
         'type' => 'text',
-        'cols' => 40,
-        'rows' => 3,
         'eval' => 'trim'
       ],
       'l10n_mode' => 'mergeIfNotBlank',
