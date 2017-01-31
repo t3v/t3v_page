@@ -1,6 +1,8 @@
 <?php
 defined('TYPO3_MODE') or die('Access denied.');
 
-// === TypoScript ===
+call_user_func(function ($extkey) {
+  // === TypoScript ===
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'T3v Page');
+  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extkey, 'Configuration/TypoScript', 'T3v Page');
+}, $_EXTKEY);
