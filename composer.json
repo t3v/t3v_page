@@ -1,7 +1,7 @@
 {
   "name": "t3v/t3v_page",
   "type": "typo3-cms-extension",
-  "description": "The TYPO3voila Page extension.",
+  "description": "The page extension of TYPO3Voila.",
   "authors": [
     {
       "name": "Maik Kempe",
