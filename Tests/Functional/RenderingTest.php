@@ -91,7 +91,7 @@ class RenderingTest extends FunctionalTestCase {
       $this->fail('Frontend Response is empty.');
     }
 
-    if ($failOnFailure && $result['status'] === Response::STATUS_Failure) {
+    if ($result['status'] === Response::STATUS_Failure && $failOnFailure) {
       $this->fail('Frontend Response has failure:' . LF . $result['error']);
     }
 
