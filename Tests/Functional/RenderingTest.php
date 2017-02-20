@@ -54,7 +54,7 @@ class RenderingTest extends FunctionalTestCase {
   }
 
   /**
-   * Helper function to fetch frontend response.
+   * Helper function to fetch Front-End response.
    *
    * @param array $requestArguments The request arguments
    * @param boolean $failOnFailure Fail on failure, defaults to `true`
@@ -77,15 +77,17 @@ class RenderingTest extends FunctionalTestCase {
 
     $arguments = [
       'documentRoot' => $instancePath,
-      'requestUrl' => 'http://localhost' . $requestUrl
+      'requestUrl'   => 'http://localhost' . $requestUrl
     ];
 
     $template = new \Text_Template(ORIGINAL_ROOT . 'typo3/sysext/core/Tests/Functional/Fixtures/Frontend/request.tpl');
     $template->setVar(['arguments' => var_export($arguments, true), 'originalRoot' => ORIGINAL_ROOT]);
 
-    $factory  = \PHPUnit_Util_PHP::factory();
+    $factory = \PHPUnit_Util_PHP::factory();
+
     $response = $factory->runJob($template->render());
-    $result   = json_decode($response['stdout'], true);
+
+    $result = json_decode($response['stdout'], true);
 
     if ($result === null) {
       $this->fail('Frontend Response is empty.');
