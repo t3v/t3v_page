@@ -61,6 +61,8 @@ class RenderingTest extends FunctionalTestCase {
    * @return Response The response
    */
   protected function fetchFrontendResponse(array $requestArguments, $failOnFailure = true) {
+    $failOnFailure = (boolean) $failOnFailure;
+
     if (!empty($requestArguments['url'])) {
       $requestUrl = '/' . ltrim($requestArguments['url'], '/');
     } else {
@@ -81,9 +83,9 @@ class RenderingTest extends FunctionalTestCase {
     $template = new \Text_Template(ORIGINAL_ROOT . 'typo3/sysext/core/Tests/Functional/Fixtures/Frontend/request.tpl');
     $template->setVar(['arguments' => var_export($arguments, true), 'originalRoot' => ORIGINAL_ROOT]);
 
-    $php = \PHPUnit_Util_PHP::factory();
-    $response = $php->runJob($template->render());
-    $result = json_decode($response['stdout'], true);
+    $factory  = \PHPUnit_Util_PHP::factory();
+    $response = $factory->runJob($template->render());
+    $result   = json_decode($response['stdout'], true);
 
     if ($result === null) {
       $this->fail('Frontend Response is empty.');
