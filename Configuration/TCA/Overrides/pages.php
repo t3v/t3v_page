@@ -10,7 +10,7 @@ call_user_func(function($extkey) {
       'label' => $lll . 'pages.tx_t3vpage_claim.label',
       'config' => [
         'type' => 'input',
-        'size' => 42,
+        'size' => 40,
         'max' => 255,
         'eval' => 'trim'
       ],
@@ -23,6 +23,8 @@ call_user_func(function($extkey) {
       'label' => $lll . 'pages.tx_t3vpage_summary.label',
       'config' => [
         'type' => 'text',
+        'rows' => 3,
+        'cols' => 40,
         'eval' => 'trim'
       ],
       'l10n_mode' => 'mergeIfNotBlank',
@@ -31,7 +33,7 @@ call_user_func(function($extkey) {
     ],
 
     'tx_t3vpage_outline' => [
-      'label' => $lll . 'pages.tx_t3vpage_summary.label',
+      'label' => $lll . 'pages.tx_t3vpage_outline.label',
       'config' => [
         'type' => 'text',
         'eval' => 'trim'
