@@ -7,6 +7,10 @@ Unreleased
 ----------
 
 * Use `call_user_func` in `ext_localconf.php` and `ext_tables.php`
+* Added unit and functional tests
+* New icon
+* Updated claim
+* Updated comments
 
 1.3.2
 -----
