@@ -24,25 +24,13 @@ class RenderingTest extends FunctionalTestCase {
   protected $testExtensionsToLoad = ['typo3conf/ext/t3v_page'];
 
   /**
-   * Setup before running tests.
-   *
-   * @return void
-   */
-  public function setUp() {
-    parent::setUp();
-
-    $this->importDataSet(__DIR__ . '/Fixtures/Database/Pages.xml');
-    $this->setUpFrontendRootPage(1, ['EXT:t3v_page/Tests/Functional/Fixtures/Frontend/Basic.ts']);
-  }
-
-  /**
    * Test if template is rendered.
    *
    * @test
    */
   public function templateIsRendered() {
     $expectedDom = new \DomDocument();
-    $expectedDom->loadHTML('<h1>T3v Content</h1>');
+    $expectedDom->loadHTML('<h1>T3v Page</h1>');
     $expectedDom->preserveWhiteSpace = false;
 
     $actualDom = new \DomDocument();
@@ -50,6 +38,19 @@ class RenderingTest extends FunctionalTestCase {
     $actualDom->preserveWhiteSpace = false;
 
     $this->assertEquals($expectedDom->saveHTML(), $actualDom->saveHTML());
+  }
+
+  /**
+   * Setup before running tests.
+   *
+   * @return void
+   */
+  protected function setUp() {
+    parent::setUp();
+
+    $this->importDataSet(__DIR__ . '/Fixtures/Database/Pages.xml');
+
+    $this->setUpFrontendRootPage(1, ['EXT:t3v_page/Tests/Functional/Fixtures/Frontend/Basic.ts']);
   }
 
   /**
