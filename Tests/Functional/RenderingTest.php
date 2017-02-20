@@ -86,7 +86,7 @@ class RenderingTest extends FunctionalTestCase {
     $result = json_decode($response['stdout'], true);
 
     if ($result === null) {
-      $this->fail('Frontend Response is empty');
+      $this->fail('Frontend Response is empty.');
     }
 
     if ($failOnFailure && $result['status'] === Response::STATUS_Failure) {
