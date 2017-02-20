@@ -4,6 +4,7 @@
     <uid>1</uid>
     <pid>0</pid>
     <title>Root</title>
+    <tx_t3vpage_claim>UH LÁLÁ, TYPO3!</tx_t3vpage_claim>
     <tx_t3vpage_summary>Root</tx_t3vpage_summary>
     <doktype>1</doktype>
     <deleted>0</deleted>
@@ -14,6 +15,7 @@
     <uid>2</uid>
     <pid>1</pid>
     <title>First page</title>
+    <tx_t3vpage_claim>UH LÁLÁ, TYPO3!</tx_t3vpage_claim>
     <tx_t3vpage_summary>First page</tx_t3vpage_summary>
     <doktype>1</doktype>
     <deleted>0</deleted>
