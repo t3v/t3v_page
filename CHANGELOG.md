@@ -6,6 +6,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* Added `Outline` (`tx_t3vpage_outline`) property to `Page` object
 * Use `call_user_func` in `ext_localconf.php` and `ext_tables.php`
 * Configured Travis CI
 * Added unit and functional tests

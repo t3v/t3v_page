@@ -18,6 +18,10 @@
         <source>Summary</source>
       </trans-unit>
 
+      <trans-unit id="pages.tx_t3vpage_outline.label" xml:space="preserve">
+        <source>Outline</source>
+      </trans-unit>
+
       <trans-unit id="pages.tx_t3vpage_thumbnail.label" xml:space="preserve">
         <source>Thumbnail</source>
       </trans-unit>

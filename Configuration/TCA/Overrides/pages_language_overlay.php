@@ -28,6 +28,17 @@ call_user_func(function($extkey) {
       'exclude' => true
     ],
 
+    'tx_t3vpage_outline' => [
+      'label' => $lll . 'pages_language_overlay.tx_t3vpage_outline.label',
+      'config' => [
+        'type' => 'text',
+        'eval' => 'trim'
+      ],
+      'defaultExtras' => 'richtext[]',
+      'l10n_mode' => 'mergeIfNotBlank',
+      'exclude' => true
+    ],
+
     'tx_t3vpage_thumbnail' => [
       'label' => $lll . 'pages_language_overlay.tx_t3vpage_thumbnail.label',
       'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
@@ -52,6 +63,11 @@ call_user_func(function($extkey) {
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages_language_overlay', '--palette--;LLL:EXT:t3v_page/Resources/Private/Language/locallang_tca.xlf:pages_language_overlay.palette.title;tx_t3vpage', '1', 'after:description');
 
   $GLOBALS['TCA']['pages_language_overlay']['palettes']['tx_t3vpage'] = [
-    'showitem' => 'tx_t3vpage_claim,--linebreak--,tx_t3vpage_summary,--linebreak--,tx_t3vpage_thumbnail'
+    'showitem' => '
+      tx_t3vpage_claim,--linebreak--,
+      tx_t3vpage_summary,--linebreak--,
+      tx_t3vpage_outline,--linebreak--,
+      tx_t3vpage_thumbnail
+    '
   ];
 }, 't3v_page');

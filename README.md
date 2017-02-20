@@ -5,13 +5,14 @@
 
 **The page extension of [TYPO3Voila].**
 
-Extends the Page object of TYPO3 with custom fields.
+Extends the Page object of TYPO3 with custom properties.
 
-Custom fields
--------------
+Custom properties
+-----------------
 
 * Claim (`tx_t3vpage_claim`)
 * Summary (`tx_t3vpage_summary`)
+* Outline (`tx_t3vpage_outline`)
 * Thumbnail (`tx_t3vpage_thumbnail`)
 
 Dependencies
