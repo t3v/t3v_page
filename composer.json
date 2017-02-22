@@ -11,6 +11,7 @@
   ],
   "keywords": [
     "CMS",
+    "Extension",
     "Page",
     "T3v",
     "TYPO3",
@@ -29,25 +30,14 @@
     "bin-dir": ".Build/bin",
     "vendor-dir": ".Build/vendor"
   },
-  "repositories": [
-    { "type": "vcs", "url": "https://github.com/t3v/t3v_core.git" }
-  ],
-  "extra": {
-    "typo3/cms": {
-      "cms-package-dir": "{$vendor-dir}/typo3/cms",
-      "web-dir": ".Build/Web"
-    }
-  },
   "replace": {
     "t3v_page": "self.version",
     "typo3-ter/t3v_page": "self.version"
   },
-  "scripts": {
-    "post-autoload-dump": [
-      "mkdir -p .Build/Web/typo3conf/ext/",
-      "[ -L .Build/Web/typo3conf/ext/t3v_page ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/t3v_page"
-    ]
-  },
+  "repositories": [
+    { "type": "composer", "url": "https://composer.typo3.org" },
+    { "type": "vcs",      "url": "https://github.com/t3v/t3v_core.git" }
+  ],
   "require": {
     "php": ">= 5.6",
     "typo3/cms-core": ">= 7.6.0, < 8.7.0",
@@ -66,8 +56,20 @@
   "autoload-dev": {
     "psr-4": {
       "T3v\\T3vPage\\Tests\\": "Tests",
-      "TYPO3\\CMS\\Core\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/core/Tests/",
-      "TYPO3\\CMS\\Fluid\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/fluid/Tests/"
+      "TYPO3\\CMS\\Core\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/core/Tests",
+      "TYPO3\\CMS\\Fluid\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/fluid/Tests"
     }
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/Web"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "mkdir -p .Build/Web/typo3conf/ext/",
+      "[ -L .Build/Web/typo3conf/ext/t3v_page ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/t3v_page"
+    ]
   }
 }
