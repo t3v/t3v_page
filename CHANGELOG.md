@@ -3,8 +3,8 @@ Changelog
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unreleased
-----------
+1.4.0
+-----
 
 * Added `Outline` (`tx_t3vpage_outline`) property to `Page` object
 * Use `call_user_func` in `ext_localconf.php` and `ext_tables.php`
