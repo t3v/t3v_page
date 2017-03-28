@@ -47,11 +47,6 @@
         <source>Summary</source>
         <target>Zusammenfassung</target>
       </trans-unit>
-
-      <trans-unit id="pages_language_overlay.tx_t3vpage_thumbnail.label" xml:space="preserve">
-        <source>Thumbnail</source>
-        <target>Vorschaubild</target>
-      </trans-unit>
     </body>
   </file>
 </xliff>

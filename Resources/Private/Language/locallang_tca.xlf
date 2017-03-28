@@ -39,10 +39,6 @@
       <trans-unit id="pages_language_overlay.tx_t3vpage_summary.label" xml:space="preserve">
         <source>Summary</source>
       </trans-unit>
-
-      <trans-unit id="pages_language_overlay.tx_t3vpage_thumbnail.label" xml:space="preserve">
-        <source>Thumbnail</source>
-      </trans-unit>
     </body>
   </file>
 </xliff>

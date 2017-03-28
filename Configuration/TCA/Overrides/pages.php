@@ -48,16 +48,28 @@ call_user_func(function($extkey) {
       'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
         'image',
         [
-          'maxitems' => 1,
+          'foreign_match_fields' => [
+            'fieldname' => 'tx_t3vpage_thumbnail',
+            'tablenames' => 'pages',
+            'table_local' => 'sys_file'
+          ],
           'foreign_types' => [
             \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
-              'showitem' => '--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,--palette--;;imageoverlayPalette,--palette--;;filePalette'
+              'showitem' => '--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,
+                             --palette--;;imageoverlayPalette,
+                             --palette--;;filePalette'
             ]
+          ],
+          'minitems' => 0,
+          'maxitems' => 1,
+          'appearance' => [
+            'showAllLocalizationLink' => true,
+            'showSynchronizationLink' => true
           ]
         ],
         $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
       ),
-      'l10n_mode' => 'mergeIfNotBlank',
+      'l10n_mode' => 'exclude',
       'l10n_display' => 'hideDiff',
       'exclude' => true
     ]

@@ -39,24 +39,6 @@ call_user_func(function($extkey) {
       'defaultExtras' => 'richtext[]',
       'l10n_mode' => 'mergeIfNotBlank',
       'exclude' => true
-    ],
-
-    'tx_t3vpage_thumbnail' => [
-      'label' => $lll . 'pages_language_overlay.tx_t3vpage_thumbnail.label',
-      'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
-        'image',
-        [
-          'maxitems' => 1,
-          'foreign_types' => [
-            \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
-              'showitem' => '--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,--palette--;;imageoverlayPalette,--palette--;;filePalette'
-            ]
-          ]
-        ],
-        $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
-      ),
-      'l10n_mode' => 'mergeIfNotBlank',
-      'exclude' => true
     ]
   ]);
 
@@ -68,8 +50,7 @@ call_user_func(function($extkey) {
     'showitem' => '
       tx_t3vpage_claim,--linebreak--,
       tx_t3vpage_summary,--linebreak--,
-      tx_t3vpage_outline,--linebreak--,
-      tx_t3vpage_thumbnail
+      tx_t3vpage_outline
     '
   ];
 }, 't3v_page');
