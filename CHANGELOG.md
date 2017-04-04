@@ -6,6 +6,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* Updated TCA configuration for T3v Page Thumbnail (`tx_t3vpage_thumbnail`)
 * Updated Composer dependencies
 * Updated scripts
 
