@@ -3,8 +3,8 @@ Changelog
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unreleased
-----------
+1.5.0
+-----
 
 * Updated TCA configuration for T3v Page Thumbnail (`tx_t3vpage_thumbnail`)
 * Updated Composer dependencies
