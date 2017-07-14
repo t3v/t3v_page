@@ -3,6 +3,11 @@ Changelog
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
+Unreleased
+----------
+
+* Reformatted code and cleanup
+
 2.0.2
 -----
 
@@ -26,14 +31,14 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 1.5.0
 -----
 
-* Updated TCA configuration for T3v Page Thumbnail (`tx_t3vpage_thumbnail`)
+* Updated TCA configuration for Thumbnail (`tx_t3vpage_thumbnail`) property
 * Updated Composer dependencies
 * Updated scripts
 
 1.4.0
 -----
 
-* Added `Outline` (`tx_t3vpage_outline`) property to `Page` object
+* Added Outline (`tx_t3vpage_outline`) property to `Page` object
 * Use `call_user_func` in `ext_localconf.php` and `ext_tables.php`
 * Configured Travis CI
 * Added unit and functional tests
@@ -46,7 +51,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 -----
 
 * Updated TCA configurations
-* Hide diff (`tx_t3vpage_thumbnail`)
+* Hide diff on Thumbnail (`tx_t3vpage_thumbnail`) property
 * Cleaned up
 * Updated Composer dependencies
 
@@ -89,13 +94,13 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 1.1.0
 -----
 
-* Added `Claim` (`tx_t3vpage_claim`) property to `Page` object
+* Added Claim (`tx_t3vpage_claim`) property to `Page` object
 
 1.0.0
 -----
 
-* Added `Thumbnail` (`tx_t3vpage_thumbnail`) property to `Page` object
-* Added `Summary` (`tx_t3vpage_summary`) property to `Page` object
+* Added Thumbnail (`tx_t3vpage_thumbnail`) property to `Page` object
+* Added Summary (`tx_t3vpage_summary`) property to `Page` object
 * Added common files
 
 [Semantic Versioning]: http://semver.org "Semantic Versioning"
