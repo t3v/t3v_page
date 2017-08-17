@@ -47,6 +47,11 @@
         <source>Summary</source>
         <target>Zusammenfassung</target>
       </trans-unit>
+
+      <trans-unit id="pages_language_overlay.tx_t3vpage_outline.label" xml:space="preserve">
+        <source>Outline</source>
+        <target>Exposition</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
