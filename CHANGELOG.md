@@ -7,7 +7,9 @@ Unreleased
 ----------
 
 * Fixed translations
+* Updated dependencies
 * Updated AppVeyor configuration
+* Cleaned up
 
 2.1.0
 -----
