@@ -8,7 +8,7 @@ Unreleased
 
 * Fixed translations
 * Updated dependencies
-* Updated AppVeyor configuration
+* Updated Travis CI and AppVeyor configuration
 * Cleaned up
 
 2.1.0
@@ -27,7 +27,7 @@ Unreleased
 -----
 
 * Updated dependencies
-* Update Travis CI and AppVeyor configuration
+* Updated Travis CI and AppVeyor configuration
 
 2.0.1
 -----
