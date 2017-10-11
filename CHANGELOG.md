@@ -3,6 +3,13 @@ Changelog
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
+Unreleased
+----------
+
+* Merged Extensions and Vendor TypoScript
+* Updated dependencies
+* Updated AppVeyor configuration
+
 2.2.0
 -----
 
