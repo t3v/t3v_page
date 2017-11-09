@@ -1,25 +1,33 @@
-# === T3v Page Configuration ===
+# --------------------------
+# | T3v Page Configuration |
+# --------------------------
 
 plugin {
   tx_t3vpage {
     persistence {
-      enableAutomaticCacheClearing = 1
+      enableAutomaticCacheClearing = {$plugin.tx_t3vpage.persistence.enableAutomaticCacheClearing}
 
-      updateReferenceIndex = 0
+      storagePid = {$plugin.tx_t3vpage.persistence.storagePid}
 
-      # storagePid = {$plugin.tx_t3vpage.persistence.storagePid}
-    }
-
-    view {
-      layoutRootPath = {$plugin.tx_t3vpage.view.layoutRootPath}
-
-      templateRootPath = {$plugin.tx_t3vpage.view.templateRootPath}
-
-      partialRootPath = {$plugin.tx_t3vpage.view.partialRootPath}
+      updateReferenceIndex = {$plugin.tx_t3vpage.persistence.updateReferenceIndex}
     }
 
     settings {
       # ...
+    }
+
+    view {
+      layoutRootPaths {
+        0 = {$plugin.tx_t3vpage.view.layoutRootPath}
+      }
+
+      templateRootPaths {
+        0 = {$plugin.tx_t3vpage.view.templateRootPath}
+      }
+
+      partialRootPaths {
+        0 = {$plugin.tx_t3vpage.view.partialRootPath}
+      }
     }
   }
 }
