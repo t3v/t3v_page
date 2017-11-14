@@ -3,14 +3,14 @@ Changelog
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unreleased
-----------
+3.0.0
+-----
 
 * Refactored TypoScript
 * Updated constants and configuration
 * Merged Extensions and Vendor TypoScript
-* Updated dependencies
 * Updated AppVeyor configuration
+* Updated dependencies
 * Dropped support for PHP 5.x
 
 2.2.0
@@ -124,6 +124,7 @@ Unreleased
 1.0.0
 -----
 
+* First release
 * Added Thumbnail (`tx_t3vpage_thumbnail`) property to `Page` object
 * Added Summary (`tx_t3vpage_summary`) property to `Page` object
 * Added common files
