@@ -17,5 +17,5 @@ composer require typo3/cms="$TYPO3_VERSION"
 # Reset the changes
 git checkout composer.json
 
-# Try to keep environment pollution down, EPA loves us.
+# Try to keep environment pollution down, EPA loves us
 unset TYPO3_VERSION
