@@ -5,7 +5,7 @@
 
 **The page extension of [TYPO3Voila].**
 
-Extends the Page object of TYPO3 with custom properties.
+Extends the page object of TYPO3 with custom properties.
 
 Custom properties
 -----------------
@@ -18,7 +18,7 @@ Custom properties
 Dependencies
 ------------
 
-* TYPO3 CMS 7.6 or greater
+* TYPO3 CMS 8.7 or greater
 * T3v Core extension
 
 Installation
