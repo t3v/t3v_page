@@ -34,8 +34,7 @@
     "typo3-ter/t3v_page": "self.version"
   },
   "repositories": [
-    { "type": "composer", "url": "https://composer.typo3.org" },
-    { "type": "vcs",      "url": "https://github.com/t3v/t3v_core" }
+    { "type": "composer", "url": "https://composer.typo3.org" }
   ],
   "require": {
     "php": ">= 7.0 < 7.3",
