@@ -23,5 +23,5 @@ fi
 # Reset the changes
 git checkout composer.json
 
-# Try to keep environment pollution down, EPA loves us.
+# Try to keep environment pollution down, EPA loves us
 unset TYPO3_VERSION TYPO3_VERSION_DIGITS TYPO3_MAJOR_VERSION
