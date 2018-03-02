@@ -4,7 +4,8 @@ defined('TYPO3_MODE') or die();
 // === Variables ===
 
 $namespace          = 't3v';
-$extensionSignature = \TYPO3\CMS\Core\Utility\GeneralUtility::underscoredToUpperCamelCase($namespace . '.' . $_EXTKEY);
+$extensionKey       = $_EXTKEY;
+$extensionSignature = \TYPO3\CMS\Core\Utility\GeneralUtility::underscoredToUpperCamelCase($namespace . '.' . $extensionKey);
 
 // === Front-end Configuration ===
 

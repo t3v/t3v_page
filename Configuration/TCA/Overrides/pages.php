@@ -3,9 +3,9 @@ defined('TYPO3_MODE') or die();
 
 // === Variables ===
 
-$extkey    = 't3v_page';
-$resources = "EXT:${extkey}/Resources";
-$lll       = "LLL:${resources}/Private/Language/locallang_tca.xlf:";
+$extensionKey = 't3v_page';
+$resources    = "EXT:${extensionKey}/Resources";
+$lll          = "LLL:${resources}/Private/Language/locallang_tca.xlf:";
 
 // === TCA Configuration ===
 
