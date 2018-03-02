@@ -4,10 +4,9 @@ defined('TYPO3_MODE') or die();
 // === Variables ===
 
 $extensionKey = 't3v_page';
-$resources    = "EXT:${extensionKey}/Resources";
-$lll          = "LLL:${resources}/Private/Language/locallang_tca.xlf:";
+$lll          = \T3v\T3vCore\Utility\ExtensionUtility::lll($extensionKey, 'locallang_tca.xlf');
 
-// === TCA Configuration ===
+// === Pages Language Overlay Configuration ===
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages_language_overlay', [
   'tx_t3vpage_claim' => [
