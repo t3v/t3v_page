@@ -1,12 +1,6 @@
 <?php
 defined('TYPO3_MODE') or die();
 
-// === Variables ===
-
-$namespace          = 't3v';
-$extensionKey       = $_EXTKEY;
-$extensionSignature = \TYPO3\CMS\Core\Utility\GeneralUtility::underscoredToUpperCamelCase($namespace . '.' . $extensionKey);
-
 // === Frontend Configuration ===
 
 // Add `tx_t3vpage_claim`, `tx_t3vpage_summary`, `tx_t3vpage_outline` and `tx_t3vpage_thumbnail` field to the root line.
