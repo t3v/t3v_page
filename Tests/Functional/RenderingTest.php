@@ -27,7 +27,7 @@ class RenderingTest extends FunctionalTestCase {
   protected $testExtensionsToLoad = ['typo3conf/ext/t3v_page'];
 
   /**
-   * Test if template is rendered.
+   * Tests if the template is rendered.
    *
    * @test
    */
@@ -45,8 +45,6 @@ class RenderingTest extends FunctionalTestCase {
 
   /**
    * Setup before running tests.
-   *
-   * @return void
    */
   protected function setUp() {
     parent::setUp();
@@ -57,15 +55,13 @@ class RenderingTest extends FunctionalTestCase {
   }
 
   /**
-   * Helper function to fetch the Frontend response.
+   * Fetches the Frontend response.
    *
    * @param array $requestArguments The request arguments
-   * @param boolean $failOnFailure Fail on failure, defaults to `true`
+   * @param bool $failOnFailure Fail on failure, defaults to `true`
    * @return \Nimut\TestingFramework\Http\Response The Frontend response
    */
-  protected function fetchFrontendResponse(array $requestArguments, $failOnFailure = true) {
-    $failOnFailure = (boolean) $failOnFailure;
-
+  protected function fetchFrontendResponse(array $requestArguments, bool $failOnFailure = true) {
     if (!empty($requestArguments['url'])) {
       $requestUrl = '/' . ltrim($requestArguments['url'], '/');
     } else {
