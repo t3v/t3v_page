@@ -6,6 +6,8 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* Updated TypoScript structure
+* Updated AppVeyor configuration
 * Cleaned up
 
 4.0.0
