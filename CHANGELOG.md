@@ -3,12 +3,12 @@ Changelog
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unreleased
-----------
+4.1.0
+-----
 
 * Updated TypoScript structure
-* Updated AppVeyor configuration
 * Updated dependencies
+* Updated AppVeyor configuration
 * Cleaned up
 
 4.0.0
@@ -17,8 +17,8 @@ Unreleased
 * TCA Migrations
 * Updated tests
 * Cleaned up
-* Updated Travis CI and AppVeyor configuration
 * Updated dependencies
+* Updated Travis CI and AppVeyor configuration
 * Dropped support for TYPO3 7.x
 
 3.2.1
