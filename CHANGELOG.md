@@ -8,6 +8,7 @@ Unreleased
 
 * Updated TypoScript structure
 * Updated AppVeyor configuration
+* Updated dependencies
 * Cleaned up
 
 4.0.0
