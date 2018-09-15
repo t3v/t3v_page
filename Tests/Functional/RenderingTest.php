@@ -24,7 +24,10 @@ class RenderingTest extends FunctionalTestCase {
    *
    * @var array
    */
-  protected $testExtensionsToLoad = ['typo3conf/ext/t3v_page'];
+  protected $testExtensionsToLoad = [
+    'typo3conf/ext/t3v_core',
+    'typo3conf/ext/t3v_page'
+  ];
 
   /**
    * Tests if the template is rendered.
