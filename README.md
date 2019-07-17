@@ -18,7 +18,7 @@ Custom properties
 Dependencies
 ------------
 
-* TYPO3 CMS 8.7 or greater
+* TYPO3 CMS 9.5 or greater
 * T3v Core extension
 
 Installation
