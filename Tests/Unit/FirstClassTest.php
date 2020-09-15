@@ -20,6 +20,6 @@ class FirstClassTest extends UnitTestCase
     {
         $firstClassObject = new LoadableClass();
 
-        $this->assertTrue($firstClassObject->returnsTrue());
+        self::assertTrue($firstClassObject->returnsTrue());
     }
 }
