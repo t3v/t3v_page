@@ -1,7 +1,7 @@
 {
   "name": "t3v/t3v_page",
   "type": "typo3-cms-extension",
-  "description": "The page extension of TYPO3Voila.",
+  "description": "The page extension of TYPO3 voilà.",
   "authors": [
     {
       "name": "Maik Kempe",
@@ -15,7 +15,7 @@
     "Page",
     "T3v",
     "TYPO3",
-    "TYPO3voila",
+    "TYPO3 voilà",
     "UH LÁLÁ"
   ],
   "homepage": "https://t3v.github.io/t3v_page/",
