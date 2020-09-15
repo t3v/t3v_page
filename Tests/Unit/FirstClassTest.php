@@ -2,7 +2,6 @@
 namespace T3v\T3vPage\Tests\Unit;
 
 use Nimut\TestingFramework\TestCase\UnitTestCase;
-
 use T3v\T3vPage\Tests\Unit\Fixtures\LoadableClass;
 
 /**
@@ -10,15 +9,17 @@ use T3v\T3vPage\Tests\Unit\Fixtures\LoadableClass;
  *
  * @package T3v\T3vPage\Tests\Unit
  */
-class FirstClassTest extends UnitTestCase {
-  /**
-   * Tests if the method returns true.
-   *
-   * @test
-   */
-  public function methodReturnsTrue() {
-    $firstClassObject = new LoadableClass();
+class FirstClassTest extends UnitTestCase
+{
+    /**
+     * Tests if the method returns true.
+     *
+     * @test
+     */
+    public function methodReturnsTrue(): void
+    {
+        $firstClassObject = new LoadableClass();
 
-    $this->assertTrue($firstClassObject->returnsTrue());
-  }
+        $this->assertTrue($firstClassObject->returnsTrue());
+    }
 }

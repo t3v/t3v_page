@@ -6,10 +6,18 @@
     {
       "name": "Maik Kempe",
       "email": "mkempe@bitaculous.com",
-      "homepage": "https://bitaculous.com"
+      "role": "Developer"
     }
   ],
-  "keywords": ["CMS", "Extension", "Page", "T3v", "TYPO3", "TYPO3voila", "UH LÁLÁ"],
+  "keywords": [
+    "CMS",
+    "Extension",
+    "Page",
+    "T3v",
+    "TYPO3",
+    "TYPO3voila",
+    "UH LÁLÁ"
+  ],
   "homepage": "https://t3v.github.io/t3v_page/",
   "support": {
     "issues": "https://github.com/t3v/t3v_page/issues"
@@ -25,7 +33,10 @@
     "typo3-ter/t3v_page": "self.version"
   },
   "repositories": [
-    { "type": "composer", "url": "https://composer.typo3.org" }
+    {
+      "type": "composer",
+      "url": "https://composer.typo3.org"
+    }
   ],
   "require": {
     "php": ">= 7.2 < 7.4",
@@ -45,14 +56,13 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "T3v\\T3vPage\\Tests\\": "Tests",
-      "TYPO3\\CMS\\Core\\Tests\\": ".build/vendor/typo3/cms/typo3/sysext/core/Tests",
-      "TYPO3\\CMS\\Fluid\\Tests\\": ".build/vendor/typo3/cms/typo3/sysext/fluid/Tests"
+      "T3v\\T3vPage\\Tests\\": "Tests"
     }
   },
   "extra": {
     "typo3/cms": {
       "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "extension-key": "t3v_page",
       "web-dir": ".build/web"
     }
   },
