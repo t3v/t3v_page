@@ -3,10 +3,11 @@ CHANGELOG
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unreleased
-----------
+5.0.0
+-----
 
-* Dropped support for TYPO3 8.x
+* Dropped support for TYPO3 8.x (breaking change)
+* Formatting, PSR-12 (Extended Coding Style)
 * Updated Travis CI and AppVeyor configuration
 * Updated dependencies
 * Cleaned up
