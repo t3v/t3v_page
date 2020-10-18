@@ -40,8 +40,9 @@
   ],
   "require": {
     "php": ">= 7.2 < 8.0",
-    "typo3/cms-core": "^9.5.21 || ^10.4.8",
-    "t3v/t3v_core": "dev-develop"
+    "typo3/cms-core": "^9.5.22 || ^10.4.9",
+    "t3v/t3v_core": "dev-develop",
+    "t3v/t3v_translations": "dev-develop"
   },
   "require-dev": {
     "mikey179/vfsstream": "^1.6",
