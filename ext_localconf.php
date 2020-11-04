@@ -16,4 +16,4 @@ if (empty($GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'])) {
     $GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'] .= ',tx_t3vpage_claim,tx_t3vpage_summary,tx_t3vpage_outline,tx_t3vpage_thumbnail';
 }
 
-/** _XXX_T3V_CREATOR_XXX_ */
+/** _XXX_T3V_GENERATOR_XXX_ */

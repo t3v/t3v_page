@@ -1,10 +1,16 @@
 <?php
+/**
+ * The `pages` TCA override.
+ *
+ * @noinspection PhpFullyQualifiedNameUsageInspection
+ */
+
 defined('TYPO3_MODE') or die();
 
 // === Variables ===
 
 $extensionKey = 't3v_page';
-$lll = \T3v\T3vCore\Utility\ExtensionUtility::lll($extensionKey, 'locallang_tca.xlf');
+$lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'locallang_ttc.xlf');
 
 // === TCA Configuration ===
 

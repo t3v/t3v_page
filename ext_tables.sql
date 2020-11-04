@@ -6,4 +6,4 @@ CREATE TABLE pages (
   tx_t3vpage_thumbnail int(11) unsigned NOT NULL DEFAULT '0'
 );
 
--- _XXX_T3V_CREATOR_XXX_ --
+-- _XXX_T3V_GENERATOR_XXX_ --

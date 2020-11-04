@@ -1,4 +1,10 @@
 <?php
+/**
+ * The `sys_template` TCA override.
+ *
+ * @noinspection PhpFullyQualifiedNameUsageInspection
+ */
+
 defined('TYPO3_MODE') or die();
 
 // === Variables ===
