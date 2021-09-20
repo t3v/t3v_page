@@ -100,3 +100,5 @@ $GLOBALS['TCA']['pages']['palettes']['tx_t3vpage'] = [
     tx_t3vpage_thumbnail
   '
 ];
+
+// === T3v Generator ===

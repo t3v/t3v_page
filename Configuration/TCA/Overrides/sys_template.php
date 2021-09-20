@@ -15,3 +15,5 @@ $extensionTitle = 'T3v Page';
 // === TypoScript ===
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extensionKey, 'Configuration/TypoScript', $extensionTitle);
+
+// === T3v Generator ===

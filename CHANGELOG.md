@@ -3,6 +3,13 @@ CHANGELOG
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
+Unreleased
+----------
+
+* Updated TypoScript structure
+* Updated dependencies
+* Cleaned up
+
 5.0.0
 -----
 

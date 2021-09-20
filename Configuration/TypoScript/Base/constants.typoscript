@@ -1,0 +1,55 @@
+# ---------------------------
+# | T3v Page Base Constants |
+# ---------------------------
+
+# === Plugin Constants ===
+
+plugin {
+  tx_t3vpage {
+    persistence {
+      # cat=plugin/tx_t3vpage/persistence; type=boolean; label=Enables the automatic cache clearing when changing data sets
+      enableAutomaticCacheClearing = 1
+
+      # cat=plugin/tx_t3vpage/persistence; type=int+; label=The Page ID of the default storage
+      storagePid = 0
+
+      # cat=plugin/tx_t3vpage/persistence; type=boolean; label=Updates the reference index to ensure data integrity
+      updateReferenceIndex = 1
+    }
+
+    resources {
+      # cat=plugin/tx_t3vpage/resources; type=string; label=The root path where the resources are stored
+      rootPath = EXT:t3v_page/Resources/
+
+      private {
+        # cat=plugin/tx_t3vpage/resources/private; type=string; label=The root path where the private resources are stored
+        rootPath = EXT:t3v_page/Resources/Private/
+      }
+
+      public {
+        # cat=plugin/tx_t3vpage/resources/public; type=string; label=The root path where the public resources are stored
+        rootPath = EXT:t3v_page/Resources/Public/
+      }
+    }
+
+    settings {
+      extbase {
+        # cat=plugin/tx_t3vpage/settings/extbase; type=string; label=The Extbase controller extension name
+        controllerExtensionName = T3vBase
+      }
+    }
+
+    view {
+      # cat=plugin/tx_t3vpage/view; type=string; label=The root path where the layouts are stored
+      layoutRootPath = EXT:t3v_page/Resources/Private/Layouts/
+
+      # cat=plugin/tx_t3vpage/view; type=string; label=The root path where the templates are stored
+      templateRootPath = EXT:t3v_page/Resources/Private/Templates/
+
+      # cat=plugin/tx_t3vpage/view; type=string; label=The root path where the partials are stored
+      partialRootPath = EXT:t3v_page/Resources/Private/Partials/
+    }
+  }
+}
+
+# === T3v Generator ===
