@@ -82,7 +82,7 @@ $lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'local
                 'type' => 'input',
                 'size' => 40,
                 'max' => 255,
-                'eval' => 'trim'
+                'eval' => 'lower, trim'
             ],
             'exclude' => true
         ],
@@ -97,10 +97,10 @@ $lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'local
     'after:description'
 );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
     'pages',
-    'tx_t3vpage_og_type',
-    '1',
+    'opengraph',
+    '--linebreak--,tx_t3vpage_og_type',
     'after:og_title'
 );
 
@@ -109,7 +109,8 @@ $GLOBALS['TCA']['pages']['palettes']['tx_t3vpage'] = [
         tx_t3vpage_claim,--linebreak--,
         tx_t3vpage_summary,--linebreak--,
         tx_t3vpage_outline,--linebreak--,
-        tx_t3vpage_thumbnail'
+        tx_t3vpage_thumbnail
+    '
 ];
 
 // === T3v Generator ===
