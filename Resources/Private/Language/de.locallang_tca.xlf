@@ -6,7 +6,7 @@
     <body>
       <!-- === Pages === -->
 
-      <trans-unit id="pages.palette.title" xml:space="preserve">
+      <trans-unit id="pages.palettes.tx_t3vpage.title" xml:space="preserve">
         <source>Additional data</source>
         <target>Zusätzliche Daten</target>
       </trans-unit>
@@ -16,14 +16,19 @@
         <target>Claim</target>
       </trans-unit>
 
-      <trans-unit id="pages.tx_t3vpage_summary.label" xml:space="preserve">
-        <source>Summary</source>
-        <target>Zusammenfassung</target>
+      <trans-unit id="pages.tx_t3vpage_og_type.label" xml:space="preserve">
+        <source>Type</source>
+        <target>Typ</target>
       </trans-unit>
 
       <trans-unit id="pages.tx_t3vpage_outline.label" xml:space="preserve">
         <source>Outline</source>
         <target>Exposition</target>
+      </trans-unit>
+
+      <trans-unit id="pages.tx_t3vpage_summary.label" xml:space="preserve">
+        <source>Summary</source>
+        <target>Zusammenfassung</target>
       </trans-unit>
 
       <trans-unit id="pages.tx_t3vpage_thumbnail.label" xml:space="preserve">

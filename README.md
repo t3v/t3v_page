@@ -1,16 +1,15 @@
 [T3v Page]
 ==========
 
-[![Travis CI Status][Travis CI Status]][Travis CI]
-
 **The page extension of [TYPO3voilà].**
 
-Extends the page object of TYPO3 with custom properties:
+T3v Page extends the page object of TYPO3 with custom fields:
 
 * Claim
 * Summary
 * Outline
 * Thumbnail
+* Open Graph Type
 
 Dependencies
 ------------
@@ -31,20 +30,19 @@ Development
 
 ### Setup
 
-```
-$ ./Scripts/Setup.sh
+```sh
+git clone https://github.com/t3v/t3v_page.git && cd t3v_page
+
+./Scripts/Setup.sh
 ```
 
-### Run Unit Tests
+### Testing
 
-```
-$ ./Scripts/Tests/Unit.sh
-```
-
-### Run Functional Tests
-
-```
-$ ./Scripts/Tests/Functional.sh
+```sh
+./Scripts/Tests.sh
+./Scripts/Tests/Unit.sh
+./Scripts/Tests/Functional.sh
+./Scripts/Tests/Migrate.sh
 ```
 
 Bug Reports
@@ -74,7 +72,5 @@ T3v Page is released under the [MIT License (MIT)], see [LICENSE].
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [T3v Page]: https://t3v.github.io/t3v_page/ "The page extension of TYPO3voilà."
-[Travis CI]: https://travis-ci.org/t3v/t3v_page "T3v Page at Travis CI"
-[Travis CI Status]: https://img.shields.io/travis/t3v/t3v_page.svg?style=flat "Travis CI Status"
 [TYPO3voilà]: https://github.com/t3v "“UH LÁLÁ, TYPO3!”"
 [Unit Testing TYPO3]: https://wiki.typo3.org/Unit_Testing_TYPO3 "Unit testing TYPO3"

@@ -25,10 +25,9 @@ $lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'local
                 'max' => 255,
                 'eval' => 'trim'
             ],
-            'l10n_display' => 'defaultAsReadonly',
+            'l10n_mode' => 'prefixLangTitle',
             'exclude' => true
         ],
-
         'tx_t3vpage_summary' => [
             'label' => $lll . 'pages.tx_t3vpage_summary.label',
             'config' => [
@@ -37,10 +36,9 @@ $lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'local
                 'cols' => 40,
                 'eval' => 'trim'
             ],
-            'l10n_display' => 'defaultAsReadonly',
+            'l10n_mode' => 'prefixLangTitle',
             'exclude' => true
         ],
-
         'tx_t3vpage_outline' => [
             'label' => $lll . 'pages.tx_t3vpage_outline.label',
             'config' => [
@@ -48,57 +46,70 @@ $lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'local
                 'enableRichtext' => true,
                 'eval' => 'trim'
             ],
+            'l10n_mode' => 'prefixLangTitle',
             'exclude' => true
         ],
-
         'tx_t3vpage_thumbnail' => [
             'label' => $lll . 'pages.tx_t3vpage_thumbnail.label',
             'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
-                'image',
+                'tx_t3vpage_thumbnail',
                 [
-                    'foreign_match_fields' => [
-                        'fieldname' => 'tx_t3vpage_thumbnail',
-                        'tablenames' => 'pages',
-                        'table_local' => 'sys_file'
-                    ],
                     'overrideChildTca' => [
                         'types' => [
+                            '0' => [
+                                'showitem' => '
+                                    --palette--;;imageoverlayPalette,
+                                    --palette--;;filePalette'
+                            ],
                             \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
-                                'showitem' => '--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,
-                             --palette--;;imageoverlayPalette,
-                             --palette--;;filePalette'
+                                'showitem' => '
+                                    --palette--;;imageoverlayPalette,
+                                    --palette--;;filePalette'
                             ]
                         ]
                     ],
-                    'minitems' => 0,
-                    'maxitems' => 1,
-                    'appearance' => [
-                        'showAllLocalizationLink' => true,
-                        'showSynchronizationLink' => true
+                    'behaviour' => [
+                        'allowLanguageSynchronization' => true
                     ]
                 ],
                 $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
             ),
-            'l10n_display' => 'hideDiff',
             'exclude' => true
-        ]
+        ],
+        'tx_t3vpage_og_type' => [
+            'label' => $lll . 'pages.tx_t3vpage_og_type.label',
+            'config' => [
+                'type' => 'input',
+                'size' => 40,
+                'max' => 255,
+                'eval' => 'trim'
+            ],
+            'exclude' => true
+        ],
+
     ]
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'pages',
-    '--palette--;' . $lll . 'pages.palette.title;tx_t3vpage',
+    '--palette--;' . $lll . 'pages.palettes.tx_t3vpage.title;tx_t3vpage',
     '1',
     'after:description'
 );
 
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+    'pages',
+    'tx_t3vpage_og_type',
+    '1',
+    'after:og_title'
+);
+
 $GLOBALS['TCA']['pages']['palettes']['tx_t3vpage'] = [
     'showitem' => '
-    tx_t3vpage_claim,--linebreak--,
-    tx_t3vpage_summary,--linebreak--,
-    tx_t3vpage_outline,--linebreak--,
-    tx_t3vpage_thumbnail
-  '
+        tx_t3vpage_claim,--linebreak--,
+        tx_t3vpage_summary,--linebreak--,
+        tx_t3vpage_outline,--linebreak--,
+        tx_t3vpage_thumbnail'
 ];
 
 // === T3v Generator ===
