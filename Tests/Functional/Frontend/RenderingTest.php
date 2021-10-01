@@ -26,7 +26,8 @@ class RenderingTest extends FunctionalTestCase
      */
     protected $coreExtensionsToLoad = [
         'core',
-        'frontend'
+        'frontend',
+        'seo'
     ];
 
     /**
