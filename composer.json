@@ -52,7 +52,9 @@
   },
   "extra": {
     "typo3/cms": {
+      "app-dir": ".build",
       "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "extension-key": "t3v_page",
       "web-dir": ".build/web"
     }
   },
