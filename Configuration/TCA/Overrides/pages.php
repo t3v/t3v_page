@@ -90,18 +90,18 @@ $lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'local
     ]
 );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-    'pages',
-    '--palette--;' . $lll . 'pages.palettes.tx_t3vpage.title;tx_t3vpage',
-    '1',
-    'after:description'
-);
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
     'pages',
     'opengraph',
     '--linebreak--,tx_t3vpage_og_type',
     'after:og_title'
+);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+    'pages',
+    '--palette--;' . $lll . 'pages.palettes.tx_t3vpage.title;tx_t3vpage',
+    '1',
+    'after:description'
 );
 
 $GLOBALS['TCA']['pages']['palettes']['tx_t3vpage'] = [
@@ -112,5 +112,16 @@ $GLOBALS['TCA']['pages']['palettes']['tx_t3vpage'] = [
         tx_t3vpage_thumbnail
     '
 ];
+
+// Removes the `slug` field temporally:
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', '--palette--;;empty', '', 'replace:slug');
+
+// Adds the `slug` field back after the `subtitle` field in the `title` palette:
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'pages',
+    'title',
+    '--linebreak--,slug,--linebreak--',
+    'after:subtitle'
+);
 
 // === T3v Generator ===
