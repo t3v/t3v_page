@@ -3,6 +3,17 @@ CHANGELOG
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
+Unreleased
+----------
+
+* Integrated `t3v/t3v_testing` which is based on `typo3/testing-framework`
+* Support for TYPO3 CMS 9.5 or greater
+* Dropped support for TYPO3 8.x (breaking change)
+* PSR-12: Extended Coding Style
+* Updated Travis CI and AppVeyor configuration
+* Updated dependencies
+* Cleaned up
+
 5.1.0
 -----
 
