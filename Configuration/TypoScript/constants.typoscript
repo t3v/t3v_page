@@ -1,9 +1,15 @@
-# ----------------------
-# | T3v Page Constants |
-# ----------------------
+/*
+  ----------------------
+  | T3v Page Constants |
+  ----------------------
+*/
 
-# === Imports ===
+/*
+  === Imports ===
+*/
 
 @import './Base/constants.typoscript'
 
-# === T3v Generator ===
+/*
+  === T3v Generator ===
+*/

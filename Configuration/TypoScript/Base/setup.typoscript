@@ -1,8 +1,12 @@
-# -----------------------
-# | T3v Page Base Setup |
-# -----------------------
+/*
+  -----------------------
+  | T3v Page Base Setup |
+  -----------------------
+*/
 
-# === Plugin Configuration ===
+/*
+  === Plugin Configuration ===
+*/
 
 plugin {
   tx_t3vpage {
@@ -61,7 +65,9 @@ plugin {
   }
 }
 
-# === Module Configuration ===
+/*
+  === Module Configuration ===
+*/
 
 module {
   tx_t3vpage {
@@ -72,4 +78,6 @@ module {
   }
 }
 
-# === T3v Generator ===
+/*
+  === T3v Generator ===
+*/

@@ -1,8 +1,12 @@
-# ---------------------------
-# | T3v Page Base Constants |
-# ---------------------------
+/*
+  ---------------------------
+  | T3v Page Base Constants |
+  ---------------------------
+*/
 
-# === Plugin Constants ===
+/*
+  === Plugin Constants ===
+*/
 
 plugin {
   tx_t3vpage {
@@ -52,4 +56,6 @@ plugin {
   }
 }
 
-# === T3v Generator ===
+/*
+  === T3v Generator ===
+*/
