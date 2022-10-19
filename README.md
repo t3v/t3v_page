@@ -14,7 +14,7 @@ T3v Page extends the page object of TYPO3 with custom fields:
 Dependencies
 ------------
 
-* TYPO3 CMS 9.5 or greater
+* TYPO3 CMS 10.4 or greater
 * T3v Core extension
 * T3v Translations extension
 

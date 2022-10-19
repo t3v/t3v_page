@@ -43,9 +43,9 @@
     }
   ],
   "require": {
-    "php": ">= 7.2",
-    "typo3/cms-core": "^9.5.31 || ^10.4.31 || ^11.5.13",
-    "typo3/cms-seo": "^9.5.31 || ^10.4.31 || ^11.5.13",
+    "php": ">= 7.4",
+    "typo3/cms-core": "^10.4.32 || ^11.5.17",
+    "typo3/cms-seo": "^10.4.32 || ^11.5.17",
     "t3v/t3v_core": "dev-develop",
     "t3v/t3v_translations": "dev-develop"
   },
