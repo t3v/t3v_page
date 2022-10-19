@@ -44,10 +44,10 @@
   ],
   "require": {
     "php": ">= 7.2",
-    "typo3/cms-core": "^9.5.31 || ^10.4.31 || ^11.5.13",
-    "typo3/cms-seo": "^9.5.31 || ^10.4.31 || ^11.5.13",
-    "t3v/t3v_core": "dev-develop",
-    "t3v/t3v_translations": "dev-develop"
+    "typo3/cms-core": "^9.5.31",
+    "typo3/cms-seo": "^9.5.31",
+    "t3v/t3v_core": "dev-9-x",
+    "t3v/t3v_translations": "dev-9-x"
   },
   "require-dev": {
     "ext-dom": "*",
