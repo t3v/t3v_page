@@ -1,20 +1,24 @@
 <?php
+declare(strict_types=1);
+
 /**
  * The `pages` TCA override.
- *
- * @noinspection PhpFullyQualifiedNameUsageInspection
  */
+
+use T3v\T3vCore\Utility\ExtensionUtility;
+use TYPO3\CMS\Core\Resource\AbstractFile;
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 defined('TYPO3') or die();
 
 // === Variables ===
 
 $extensionKey = 't3v_page';
-$lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'locallang_tca.xlf');
+$lll = ExtensionUtility::getLocallang($extensionKey, 'locallang_tca.xlf');
 
 // === TCA Configuration ===
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
+ExtensionManagementUtility::addTCAcolumns(
     'pages',
     [
         'tx_t3vpage_claim' => [
@@ -51,7 +55,7 @@ $lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'local
         ],
         'tx_t3vpage_thumbnail' => [
             'label' => $lll . 'pages.tx_t3vpage_thumbnail.label',
-            'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
+            'config' => ExtensionManagementUtility::getFileFieldTCAConfig(
                 'tx_t3vpage_thumbnail',
                 [
                     'overrideChildTca' => [
@@ -61,7 +65,7 @@ $lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'local
                                     --palette--;;imageoverlayPalette,
                                     --palette--;;filePalette'
                             ],
-                            \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
+                            AbstractFile::FILETYPE_IMAGE => [
                                 'showitem' => '
                                     --palette--;;imageoverlayPalette,
                                     --palette--;;filePalette'
@@ -86,18 +90,17 @@ $lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'local
             ],
             'exclude' => true
         ],
-
     ]
 );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+ExtensionManagementUtility::addFieldsToPalette(
     'pages',
     'opengraph',
     '--linebreak--,tx_t3vpage_og_type',
     'after:og_title'
 );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+ExtensionManagementUtility::addToAllTCAtypes(
     'pages',
     '--palette--;' . $lll . 'pages.palettes.tx_t3vpage.title;tx_t3vpage',
     '1',
@@ -114,10 +117,15 @@ $GLOBALS['TCA']['pages']['palettes']['tx_t3vpage'] = [
 ];
 
 // Removes the `slug` field temporally:
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', '--palette--;;empty', '', 'replace:slug');
+ExtensionManagementUtility::addToAllTCAtypes(
+    'pages',
+    '--palette--;;empty',
+    '',
+    'replace:slug'
+);
 
 // Adds the `slug` field back after the `subtitle` field in the `title` palette:
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+ExtensionManagementUtility::addFieldsToPalette(
     'pages',
     'title',
     '--linebreak--,slug,--linebreak--',
