@@ -104,7 +104,7 @@ ExtensionManagementUtility::addToAllTCAtypes(
     'pages',
     '--palette--;' . $lll . 'pages.palettes.tx_t3vpage.title;tx_t3vpage',
     '1',
-    'after:description'
+    'after:keywords'
 );
 
 $GLOBALS['TCA']['pages']['palettes']['tx_t3vpage'] = [
