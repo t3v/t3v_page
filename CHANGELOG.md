@@ -3,8 +3,8 @@ CHANGELOG
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unreleased
-----------
+7.0.0
+-----
 
 * Moved `tx_t3vpage` palette after `keywords` field and into the `Metadata` tab
 * Updated Travis CI configuration
