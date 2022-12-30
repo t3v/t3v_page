@@ -40,7 +40,7 @@
     { "type": "composer", "url": "https://composer.typo3.org" }
   ],
   "require": {
-    "php": ">= 7.2",
+    "php": ">= 5.5 <= 7.2",
     "typo3/cms-core": "^7.6",
     "t3v/t3v_core": "dev-7-x"
   },
