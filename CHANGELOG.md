@@ -3,6 +3,13 @@ CHANGELOG
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
+Unreleased
+----------
+
+* Updated Travis CI configuration
+* Updated dependencies
+* Minor changes and clean up
+
 7.0.0
 -----
 

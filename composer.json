@@ -44,14 +44,14 @@
   ],
   "require": {
     "php": ">= 7.4",
-    "typo3/cms-core": "^10.4.34 || ^11.5.21",
-    "typo3/cms-seo": "^10.4.34 || ^11.5.21",
+    "typo3/cms-core": "^10.4.34 || ^11.5.22",
+    "typo3/cms-seo": "^10.4.34 || ^11.5.22",
     "t3v/t3v_core": "dev-develop",
     "t3v/t3v_translations": "dev-develop"
   },
   "require-dev": {
     "ext-dom": "*",
-    "t3v/t3v_testing": "^1.2"
+    "t3v/t3v_testing": "^2.0"
   },
   "autoload": {
     "psr-4": {
