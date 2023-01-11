@@ -4,6 +4,8 @@ declare(strict_types=1);
 namespace T3v\T3vPage\Tests\Functional\Frontend;
 
 use Doctrine\DBAL\DBALException;
+use DomDocument;
+use DOMXPath;
 use T3v\T3vTesting\Tests\Functional\Frontend\Traits\SetupTrait;
 use TYPO3\TestingFramework\Core\Exception;
 use TYPO3\TestingFramework\Core\Functional\Framework\Frontend\InternalRequest;
@@ -45,17 +47,9 @@ class RenderingTest extends FunctionalTestCase
     ];
 
     /**
-     * The paths to link in the test instance.
-     *
-     * @var array
-     */
-    protected $pathsToLinkInTestInstance = [];
-
-    /**
      * Tests if the template is rendered.
      *
      * @test
-     * @noinspection PhpFullyQualifiedNameUsageInspection
      */
     public function templateIsRendered(): void
     {
@@ -64,13 +58,13 @@ class RenderingTest extends FunctionalTestCase
         );
 
         if ($response->getStatusCode() === 200) {
-            $document = new \DomDocument();
+            $document = new DomDocument();
             $document->loadHTML((string)$response->getBody());
-            $xpath = new \DOMXPath($document);
+            $xpath = new DOMXPath($document);
             $titleTag = $xpath->query('/html/head/title')->item(0);
             $generatorMetaTag = $xpath->query('/html/head/meta[@name="generator"]')->item(0);
 
-            self::assertStringContainsString('Home', $titleTag->nodeValue);
+            self::assertStringContainsString('Home | T3v Page', $titleTag->nodeValue);
             self::assertEquals('TYPO3 CMS', $generatorMetaTag->getAttribute('content'));
         }
     }
