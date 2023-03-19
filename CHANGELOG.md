@@ -3,8 +3,8 @@ CHANGELOG
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unrelased
----------
+7.2.0
+-----
 
 * Added TypoScript for `seo` extension
 * Updated Composer configuration
