@@ -40,8 +40,7 @@
     "php": ">= 7.4",
     "typo3/cms-core": "^10.4.36 || ^11.5.25",
     "typo3/cms-seo": "^10.4.36 || ^11.5.25",
-    "t3v/t3v_core": "dev-develop",
-    "t3v/t3v_translations": "dev-develop"
+    "t3v/t3v_base": "dev-develop"
   },
   "require-dev": {
     "ext-dom": "*",

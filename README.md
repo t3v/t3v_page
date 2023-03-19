@@ -21,8 +21,7 @@ Dependencies
 
 ### TYPO3voilà
 
-* T3v Core extension
-* T3v Translations extension
+* T3v Base extension
 
 Installation
 ------------
