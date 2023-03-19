@@ -14,7 +14,13 @@ T3v Page extends the page object of TYPO3 with custom fields:
 Dependencies
 ------------
 
+### Core
+
 * TYPO3 CMS 10.4 or greater
+* SEO extension
+
+### TYPO3voilà
+
 * T3v Core extension
 * T3v Translations extension
 
