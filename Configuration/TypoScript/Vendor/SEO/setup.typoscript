@@ -1,0 +1,11 @@
+/*
+  ----------------------
+  | T3v Page SEO Setup |
+  ----------------------
+*/
+
+/*
+  === Imports ===
+*/
+
+@import 'EXT:seo/Configuration/TypoScript/XmlSitemap/setup.typoscript'

@@ -1,0 +1,15 @@
+/*
+  -----------------------------
+  | T3v Page Vendor Constants |
+  -----------------------------
+*/
+
+/*
+  === Imports ===
+*/
+
+@import './SEO/constants.typoscript'
+
+/*
+  === T3v Generator ===
+*/

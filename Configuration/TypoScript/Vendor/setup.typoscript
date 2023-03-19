@@ -1,0 +1,15 @@
+/*
+  -------------------------
+  | T3v Page Vendor Setup |
+  -------------------------
+*/
+
+/*
+  === Imports ===
+*/
+
+@import './SEO/setup.typoscript'
+
+/*
+  === T3v Generator ===
+*/

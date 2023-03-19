@@ -9,6 +9,7 @@
 */
 
 @import './Base/constants.typoscript'
+@import './Vendor/constants.typoscript'
 
 /*
   === T3v Generator ===

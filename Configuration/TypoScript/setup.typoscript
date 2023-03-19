@@ -9,6 +9,7 @@
 */
 
 @import './Base/setup.typoscript'
+@import './Vendor/setup.typoscript'
 
 /*
   === T3v Generator ===

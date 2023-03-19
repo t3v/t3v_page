@@ -6,6 +6,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unrelased
 ---------
 
+* Added TypoScript for `seo` extension
 * Updated Composer configuration
 * Updated dependencies
 
