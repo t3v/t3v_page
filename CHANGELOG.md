@@ -3,8 +3,8 @@ CHANGELOG
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unreleased
-----------
+7.3.0
+-----
 
 * Use `t3v_base` instead of `t3v_core` for future development
 
